@@ -1,6 +1,39 @@
+'use client';
+import { SetStateAction, useState } from 'react';
+
 import Image from "next/image";
+import { FormEvent } from "react";
+import { duztr } from "./ztr/duztr";
+import { ue2il } from "./ztr/ue2il";
+import { Button } from "@/components/ui/button"
+import FontPicker from '@/components/lifonts/lifp';
 
 export default function Home() {
+  const [iteksta, set_iteksta] = useState('6यरलमनफ5टडपबस');
+  const [oteksta, set_oteksta] = useState('');
+  let itekst: string = "";
+  let otekst: string = "";
+  let ztrdir: string = "";
+  // const [text, set_text] = useState(itekst);
+
+  const ioz: { i: string; o: string; z: string } = { i: itekst, o: otekst, z: ztrdir };
+
+  const handle_ita_change = (event: { target: { value: SetStateAction<string>; }; }) => {
+    set_iteksta(event.target.value);
+  };
+  const handle_ota_change = (event: { target: { value: SetStateAction<string>; }; }) => {
+    set_oteksta(event.target.value);
+  };
+  function itekst_on_input(): void { duztr(ioz); }
+  function ztrdir_changed(): void { duztr(ioz); }
+  function on_ue2il() { 
+    ioz.i = iteksta ;
+    ue2il(ioz); 
+    // set_iteksta(ioz.i);
+    set_oteksta(ioz.o);
+  }
+
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
@@ -12,18 +45,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
@@ -41,6 +63,7 @@ export default function Home() {
             />
             Deploy now
           </a>
+          <FontPicker/>
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
@@ -49,7 +72,17 @@ export default function Home() {
           >
             Read our docs
           </a>
+          <textarea id="ita" onInput={itekst_on_input}></textarea>
         </div>
+        <div className="flex gap-4 items-center flex-col sm:flex-row">
+          <textarea id="ita" value={iteksta} onChange={handle_ita_change} cols={80}></textarea>
+        </div>
+        <div className="flex gap-4 items-center flex-col sm:flex-row">
+          <Button onClick={on_ue2il}>ue2il</Button>
+        </div>
+        <div className="flex gap-4 items-center flex-col sm:flex-row">
+          <textarea id="ota" value={oteksta} onChange={handle_ota_change} cols={80} rows={12}></textarea>
+        </div>        
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
@@ -101,3 +134,5 @@ export default function Home() {
     </div>
   );
 }
+
+

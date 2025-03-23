@@ -1,0 +1,51 @@
+[
+    { "olabel": "iNg15:-31=a-z+ADHNT", "ovalue": "ing15", "sfonts": [
+		{ "olabel": "iNg15:-31=26a-z+ADHNT", "ovalue": "ing15" },
+		{ "olabel": "iNg15m monotype cli", "ovalue": "ing15m" },
+		{ "olabel": "binaryv_89YJQWPF", "ovalue": "binaryv15" }
+    ] },
+    { "olabel": "HinDi15", "ovalue": "hindi15", "sfonts": [
+        { "olabel": "HinDi15", "ovalue": "hindi15" },
+        { "olabel": "iNg15:-31=26a-z+ADHNT", "ovalue": "ing15" }
+    ] },
+    { "olabel": "bANglA15", "ovalue": "bangla15", "sfonts": [
+        { "olabel": "bANglA15", "ovalue": "bangla15" },
+        { "olabel": "iNg15:-31=26a-z+ADHNT", "ovalue": "ing15" }
+    ] },
+    { "olabel": "korean15", "ovalue": "korean15", "sfonts": [
+        { "olabel": "korean15", "ovalue": "korean15" },
+        { "olabel": "iNg15:-31=26a-z+ADHNT", "ovalue": "ing15" }
+    ] },
+    { "olabel": "sinHalA15", "ovalue": "sinhala15", "sfonts": [
+        { "olabel": "sinHalA15", "ovalue": "sinhala15" },
+        { "olabel": "iNg15:-31=26a-z+ADHNT", "ovalue": "ing15" }
+    ] },
+    { "olabel": "Telugu15", "ovalue": "telugu15", "sfonts": [
+        { "olabel": "Telugu15", "ovalue": "telugu15" },
+        { "olabel": "iNg15:-31=26a-z+ADHNT", "ovalue": "ing15" }
+    ] },
+    { "olabel": "Tamil15", "ovalue": "tamil15", "sfonts": [
+        { "olabel": "Tamil15", "ovalue": "tamil15" },
+        { "olabel": "iNg15:-31=26a-z+ADHNT", "ovalue": "ing15" }
+    ] },
+    { "olabel": "malayAlam15", "ovalue": "malayalam15", "sfonts": [
+        { "olabel": "malayAlam15", "ovalue": "malayalam15" },
+        { "olabel": "iNg15:-31=26a-z+ADHNT", "ovalue": "ing15" }
+    ] },
+    { "olabel": "kannadA15", "ovalue": "kannada15", "sfonts": [
+        { "olabel": "kannadA15", "ovalue": "kannada15" },
+        { "olabel": "iNg15:-31=26a-z+ADHNT", "ovalue": "ing15" }
+    ] },
+    { "olabel": "oriyA15", "ovalue": "oriya15", "sfonts": [
+        { "olabel": "oriyA15", "ovalue": "oriya15" },
+        { "olabel": "iNg15:-31=26a-z+ADHNT", "ovalue": "ing15" }
+    ] },
+    { "olabel": "gurmukhi15", "ovalue": "gurmukhi15", "sfonts": [
+        { "olabel": "gurmukhi15", "ovalue": "gurmukhi15" },
+        { "olabel": "iNg15:-31=26a-z+ADHNT", "ovalue": "ing15" }
+    ] },
+    { "olabel": "guzrATi15", "ovalue": "guzrati15", "sfonts": [
+        { "olabel": "guzrATi15", "ovalue": "guzrati15" },
+        { "olabel": "iNg15:-31=26a-z+ADHNT", "ovalue": "ing15" }
+    ] }
+]

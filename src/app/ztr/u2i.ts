@@ -16,10 +16,10 @@ export function u2i(ioz: { i: string; o: string; z: string  }): void {
     let nekst_char_code: number = 0;
     let prev_lang_code: number = 0;
     let curr_lang_code: number = 0;
-    let nekst_lang_code: number = 0;
+    // let nekst_lang_code: number = 0;
     let prev_char_modulo: number = 0;
     let curr_char_modulo: number = 0;
-    let nekst_char_modulo: number = 0;
+    // let nekst_char_modulo: number = 0;
 
     while (indeks < inputLength) {
         prev_lang_code = curr_lang_code; 
@@ -43,7 +43,7 @@ export function u2i(ioz: { i: string; o: string; z: string  }): void {
             //nekst_char_modulo = nekst_char_code % 0x80;
         } else { 
             // nekst_char_code = nekst_lang_code = nekst_char_modulo = -1; 
-            nekst_char_code = -1; 
+            // nekst_char_code = -1; 
         }
 
         if (curr_lang_code > 0x11 && curr_lang_code < 0x1B) {

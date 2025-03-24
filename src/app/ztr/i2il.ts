@@ -8,12 +8,12 @@ export function i2il(ioz: { i: string; o: string; z: string  }): void {
 	const oarr: string[] = Array(12).fill("");
 	let indeks: number = 0; 
 	let curr_char: string = ''; 
-	let nekst_char: string = '';
-	let hinchars: string = "tdpbsyrlmnf"; 
+	// let nekst_char: string = '';
+	const hinchars: string = "tdpbsyrlmnf"; 
 
 	while (indeks < inputLength) {
 		curr_char = ioz.i[indeks];
-		let izileven: number = hinchars.indexOf(curr_char); 
+		const izileven: number = hinchars.indexOf(curr_char); 
 		for (let i: number = 0; i < hinchars.length; i++) {
 			if (izileven > -1) { 
 				oarr[i] += i2il_arr[i][izileven]; 

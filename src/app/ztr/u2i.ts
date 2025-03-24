@@ -42,7 +42,8 @@ export function u2i(ioz: { i: string; o: string; z: string  }): void {
             nekst_lang_code = (nekst_char_code / 0x80) >> 0;
             nekst_char_modulo = nekst_char_code % 0x80;
         } else { 
-            nekst_char_code = nekst_lang_code = nekst_char_modulo = -1; 
+            // nekst_char_code = nekst_lang_code = nekst_char_modulo = -1; 
+            nekst_char_code = -1; 
         }
 
         if (curr_lang_code > 0x11 && curr_lang_code < 0x1B) {

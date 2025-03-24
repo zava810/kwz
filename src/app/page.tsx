@@ -2,7 +2,7 @@
 import { SetStateAction, useState } from 'react';
 
 import Image from "next/image";
-import { FormEvent } from "react";
+// import { FormEvent } from "react";
 import { duztr } from "./ztr/duztr";
 import { ue2il } from "./ztr/ue2il";
 import { Button } from "@/components/ui/button"
@@ -11,9 +11,9 @@ import FontPicker from '@/components/lifonts/lifp';
 export default function Home() {
   const [iteksta, set_iteksta] = useState('6यरलमनफ5टडपबस');
   const [oteksta, set_oteksta] = useState('');
-  let itekst: string = "";
-  let otekst: string = "";
-  let ztrdir: string = "";
+  const itekst: string = "";
+  const otekst: string = "";
+  const ztrdir: string = "";
   // const [text, set_text] = useState(itekst);
 
   const ioz: { i: string; o: string; z: string } = { i: itekst, o: otekst, z: ztrdir };
@@ -25,7 +25,7 @@ export default function Home() {
     set_oteksta(event.target.value);
   };
   function itekst_on_input(): void { duztr(ioz); }
-  function ztrdir_changed(): void { duztr(ioz); }
+  // function ztrdir_changed(): void { duztr(ioz); }
   function on_ue2il() { 
     ioz.i = iteksta ;
     ue2il(ioz); 

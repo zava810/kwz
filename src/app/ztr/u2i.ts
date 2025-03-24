@@ -13,7 +13,7 @@ export function u2i(ioz: { i: string; o: string; z: string  }): void {
     let curr_char: string = '';
     let nekst_char: string = '';
     let curr_char_code: number = 0;
-    let nekst_char_code: number = 0;
+    // let nekst_char_code: number = 0;
     let prev_lang_code: number = 0;
     let curr_lang_code: number = 0;
     // let nekst_lang_code: number = 0;
@@ -37,14 +37,14 @@ export function u2i(ioz: { i: string; o: string; z: string  }): void {
         
         nekst_char = ioz.i[indeks + 1];
 
-        if (indeks + 1 < inputLength) {
-            nekst_char_code = nekst_char.charCodeAt(0);
+        // if (indeks + 1 < inputLength) {
+            // nekst_char_code = nekst_char.charCodeAt(0);
             //nekst_lang_code = (nekst_char_code / 0x80) >> 0;
             //nekst_char_modulo = nekst_char_code % 0x80;
-        } else { 
+        // } else { 
             // nekst_char_code = nekst_lang_code = nekst_char_modulo = -1; 
             // nekst_char_code = -1; 
-        }
+        // }
 
         if (curr_lang_code > 0x11 && curr_lang_code < 0x1B) {
             if (is_in_it([7,8,9,10,13,14,15,16,19,20,21], curr_char_modulo)) {

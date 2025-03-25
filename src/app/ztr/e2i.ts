@@ -101,16 +101,15 @@ export const Aa2phonetic_Aa = function(ioz: { i: string; o: string; z: string  }
   }
   
 export const e2i = function(ioz: { i: string; o: string; z: string  }): void {
-      Hh2phonetic_H(ioz);
-      Nn2phonetic_N(ioz); 
+      //Hh2phonetic_H(ioz);
+      //Nn2phonetic_N(ioz); 
       //Ww_to_vv(ioz);	
-      Aa2phonetic_Aa(ioz);
+      //Aa2phonetic_Aa(ioz);
       //ioz.i.value = ioz.i.value.replaceAll(/c/ig,'ć'); ///ꞇ
       // ɦHɦĥ
-      ioz.i = ioz.i.replaceAll(
-          /H/g,'ɦ').replaceAll(
-          /N/g,'ń').replaceAll(
-          /à/g,'a'); //α/g,'A').replaceAll();
+      //ioz.i = ioz.i.replaceAll(/H/g,'ɦ').replaceAll(/N/g,'ń').replaceAll(/à/g,'a'); //α/g,'A').replaceAll();
       ioz.i = ioz.i.toLowerCase();
-      ioz.o = ioz.i ;      
+	  ioz.i = ioz.i.replaceAll(/j/g,'z').replaceAll(/q/g,'k').replaceAll(
+		/v/g,'w').replaceAll(/([a-wyz])x/g,"$1ks"); //α/g,'A').replaceAll();
+      ioz.o = ioz.i ;   
   }

@@ -43,7 +43,7 @@ const FontPicker: React.FC = () => {
 
   return (
     <div style={{ width: 400, marginBottom: 20, color: 'black', backgroundColor: 'white' }} >
-      <Select
+      <Select id='scriptsel'
         placeholder="select script"
         value={script}
         options={data}
@@ -51,7 +51,7 @@ const FontPicker: React.FC = () => {
         getOptionLabel={(x) => x.olabel}
         getOptionValue={(x) => x.ovalue}
       />
-      <Select
+      <Select id='fontsel'
         placeholder="select sfont"
         value={sfont}
         options={sfontlist}

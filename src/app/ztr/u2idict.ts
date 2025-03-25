@@ -5,32 +5,32 @@ export const u2idict: {
   } = {
     all_phoniks_list: [
         '', // 	ऀ	900	2304		inverted candrabindu
-        'ń', // 	ँ	901	2305		anunasika(candrabindu)
-        'ń', // 	ं ń	902	2306	anuswara	anusvara bindu
-        'a', // 	ः	903	2307		visarga
-        'ae', // 	ऄ à	904	2308		short a ,  e in awadh
-        'a', // 	अ	905	2309	vovls
-        'αα', // 	आ  àα α	906	2310	vovls
-        'i', // 	इ	907	2311	vovls
-        'i', // 	ई	908	2312	vovls
-        'u', // 	उ	909	2313	vovls
-        'u', // 	ऊ	90A	2314	vovls
+        'N', // 	ँ	901	2305		anunasika(candrabindu)
+        'N', // 	ं ń	902	2306	anuswara	anusvara bindu
+        ':', // 	ः	903	2307		visarga
+        'Ae', // 	ऄ à	904	2308		short a ,  e in awadh
+        'A', // 	अ	905	2309	vovls
+        'Aa', // 	आ  àα α	906	2310	vovls
+        'Ai', // 	इ	907	2311	vovls
+        'Ai', // 	ई	908	2312	vovls
+        'Au', // 	उ	909	2313	vovls
+        'Au', // 	ऊ	90A	2314	vovls
         'ri', // 	ऋ	90B	2315	vovls
         'li', // 	ऌ	90C	2316	vovls
-        'a', // 	ऍ	90D	2317	no	candra e
-        'e', // 	ऎ	90E	2318	no	short e
-        'e', // 	ए	90F	2319	vovls
-        'e', // 	ऐ	910	2320	vovls
-        'αα', // 	ऑ	911	2321		candra o
-        'o', // 	ऒ	912	2322		short o
-        'o', // 	ओ	913	2323
-        'o', // 	औ	914	2324
+        'Aa', // 	ऍ	90D	2317	no	candra e
+        'Ae', // 	ऎ	90E	2318	no	short e
+        'Ae', // 	ए	90F	2319	vovls
+        'Ae', // 	ऐ	910	2320	vovls
+        'Aa', // 	ऑ	911	2321		candra o
+        'Ao', // 	ऒ	912	2322		short o
+        'Ao', // 	ओ	913	2323
+        'Ao', // 	औ	914	2324
         'k', // 	क	915	2325
         'kh', // 	ख	916	2326
         'g', // 	ग	917	2327
         'gh', // 	घ	918	2328
-        'ńg', // 	ङ	919	2329
-        'ć', // 	चꞆꞇćċ	91A	2330
+        'Ng', // 	ङ	919	2329
+        'ch', // 	चꞆꞇćċ	91A	2330
         'ch', // 	छ	91B	2331
         'z', // 	ज	91C	2332
         'zh', // 	झ	91D	2333
@@ -40,10 +40,10 @@ export const u2idict: {
         'd', // 	ड	921	2337
         'dh', // 	ढ	922	2338
         'n', // 	ण	923	2339		nna
-        'т', // 	तтτ	924	2340
-        'тh', // 	थ	925	2341
-        'ԃ', // 	द ꟈđԃ	926	2342
-        'ԃh', // 	ध	927	2343 Ԁh dh ԃh
+        'T', // 	तтτ	924	2340
+        'Th', // 	थ	925	2341
+        'D', // 	द ꟈđԃ	926	2342
+        'Dh', // 	ध	927	2343 Ԁh dh ԃh
         'n', // 	न	928	2344
         'n', // 	ऩ	929	2345		nnna
         'p', // 	प	92A	2346
@@ -61,12 +61,12 @@ export const u2idict: {
         'sh', // 	श	936	2358
         's', // 	ष	937	2359
         's', // 	स	938	2360
-        'ɦ', // 	हɦɦHɦĥ	939	2361
+        'H', // 	हɦɦHɦĥ	939	2361
         'oe', // 	ऺ	93A	2362		oe
         'ui', // 	ऻ	93B	2363		ooe
         '', // 	़	93C	2364		nukta for extending the alphabet to new letters
         '!', // 	ऽ	93D	2365		Avagraha
-        'α', // 	ा α	93E	2366	vvs
+        'a', // 	ा α	93E	2366	vvs
         'i', // 	ि	93F	2367	vvs
         'i', // 	ी	940	2368	vvs
         'u', // 	ु	941	2369	vvs
@@ -118,12 +118,12 @@ export const u2idict: {
         '9', // 	९	96F	2415
         '_', // 	॰	970	2416		abbreviation sign
         '__', // 	ॱ	971	2417		high spacing dot
-        'a', // 	ॲ	972	2418		A
-        'ao', // 	ॳ	973	2419		o
-        'ae', // 	ॴ	974	2420		oe
-        'ao', // 	ॵ	975	2421		ao
-        'ai', // 	ॶ	976	2422		ui
-        'aui', // 	ॷ	977	2423		uui
+        'A', // 	ॲ	972	2418		A
+        'Ao', // 	ॳ	973	2419		o
+        'Ae', // 	ॴ	974	2420		oe
+        'Ao', // 	ॵ	975	2421		ao
+        'Ai', // 	ॶ	976	2422		ui
+        'Aui', // 	ॷ	977	2423		uui
         'd', // 	ॸ	978	2424		d
         'z', // 	ॹ	979	2425		z
         'y', // 	ॺ	97A	2426		y

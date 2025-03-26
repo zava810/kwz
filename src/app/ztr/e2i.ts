@@ -110,6 +110,8 @@ export const e2i = function(ioz: { i: string; o: string; z: string  }): void {
       //ioz.i = ioz.i.replaceAll(/H/g,'ɦ').replaceAll(/N/g,'ń').replaceAll(/à/g,'a'); //α/g,'A').replaceAll();
       ioz.i = ioz.i.toLowerCase();
 	  ioz.i = ioz.i.replaceAll(/j/g,'z').replaceAll(/q/g,'k').replaceAll(
-		/v/g,'w').replaceAll(/([a-wyz])x/g,"$1ks"); //α/g,'A').replaceAll();
+		/v/g,'w').replaceAll(/([a-wyz])x/g,"$1ks").replaceAll(
+		/xi/g,'zi').replaceAll(/xmas/g,"chritmas").replaceAll(
+			/xr/g,'Aksr').replaceAll(/\bx/g,"Aks"); //α/g,'A').replaceAll();
       ioz.o = ioz.i ;   
   }

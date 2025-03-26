@@ -25,17 +25,20 @@ export function i2il(ioz: { i: string; o: string; z: string  }): void {
   	}
 
 	ioz.o =
-		"1. " + oarr[0] + "\n" +
-		"2. " + oarr[1] + "\n" +
-		"7. " + oarr[6] + "\n" +
-		"Y. " + oarr[10] + "\n" +
-		"6. " + oarr[5] + "\n" +
-		"8. " + oarr[7] + "\n" +
-        "9. " + oarr[8] + "\n" +
-        "5. " + oarr[4] + "\n" +
-        "L. " + oarr[9] + "\n" +
-        "3. " + oarr[2] + "\n" +
-        "4. " + oarr[3] + "\n";
+		"\nhindi: " + oarr[0] + "\n\n" +
+		"bangla bengali: " + oarr[1] + "\n\n" +
+		"telugu: " + oarr[6] + "\n\n" +
+		"korean: " + oarr[10] + "\n\n" +
+		"tamil: " + oarr[5] + "\n\n" +
+		"kannada: " + oarr[7] + "\n\n" +
+        "telugu: " + oarr[8] + "\n\n" +
+        "odia/oriya: " + oarr[4] + "\n\n" +
+        "sinhala: " + oarr[9] + "\n\n" +
+        "gujarati: " + oarr[2] + "\n\n" +
+        "punjabi: " + oarr[3] + "\n\nEng:52:a-z+A-Z ing:31:a-z+àԃɦńᴛ.\n" +
+		"aam aaDmi ki zrurт : bhasa anek , likhai anek , sbme 8aiueohcg ek.\n" +
+		"wn wowels(8aiueohcg) wn india wn bharT great india\n" +
+		"https://zawa8.vercel.app font ing115.ttf hindi115.ttf android/chrome/firefox/windows/linux\n";
 }
 
 /*

@@ -25,10 +25,20 @@ export default function Home() {
     set_oteksta(event.target.value);
   };
   function itekst_on_input(): void { duztr(ioz); }
-  // function ztrdir_changed(): void { duztr(ioz); }
+  //function ztrdir_changed(): void { duztr(ioz); }
   function on_ue2il() { 
     ioz.i = iteksta ;
-    ue2il(ioz); 
+    //ue2il(ioz); 
+    /////
+    ioz.z = "e2i"; duztr(ioz);
+    let all_text = "ing31: " ;
+    ioz.z = "u2i"; duztr(ioz);
+    ioz.i = ioz.o; set_iteksta(ioz.i);
+    all_text += (ioz.o + "\n") ;
+    ioz.z = "i2il"; duztr(ioz);
+    all_text += (ioz.o + "\n") ;
+    ioz.o = all_text;
+    /////
     // set_iteksta(ioz.i);
     set_oteksta(ioz.o);
   }

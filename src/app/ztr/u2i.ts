@@ -13,7 +13,17 @@ function u2i_post(ioz: { i: string; o: string; z: string  }): void {
         //([kgcztdTDpbs])___h/g, "$1_h").replaceAll(
         //___h/g, "h").replaceAll(
             /\b_/g, "").replaceAll(
-                /\bA([iueo])/g, "$1");
+            /\bA([iueo])/g, "$1").replaceAll(
+            /([hiueo])A/g, "$1");
+    ioz.i = ioz.o = ioz.o.replaceAll(
+        /([a-zԃɦńᴛ])aa/ig,"$1a").replaceAll(
+        /N$/g,"").replaceAll(
+        /N([),\s\.!\?naeiouhwv\b])/g,"$1").replaceAll(
+        /N([bp])/g,"m$1").replaceAll(
+        /N([^kg])/g,"n$1");
+
+    ioz.i = ioz.o = ioz.o.replaceAll(
+        /chch/ig,"cch");
 }
 export function u2i(ioz: { i: string; o: string; z: string  }): void {
     function is_in_it(list: Array<number> | Record<string, unknown>, val: number): boolean {

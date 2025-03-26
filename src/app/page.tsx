@@ -4,7 +4,7 @@ import { SetStateAction, useState } from 'react';
 import Image from "next/image";
 // import { FormEvent } from "react";
 import { duztr } from "./ztr/duztr";
-import { ue2il } from "./ztr/ue2il";
+// import { ue2il } from "./ztr/ue2il";
 import { Button } from "@/components/ui/button"
 import FontPicker from '@/components/lifonts/lifp';
 
